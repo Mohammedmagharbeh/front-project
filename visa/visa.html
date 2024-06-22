@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Visa card</title>
+  <link rel="icon" href="../logo.logo.avif">
+
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+    
+</head>
+<body>
+  <div class="card">
+    <div class="card-header">
+      بطاقة الفيزا 
+    </div>
+    <div class="form-group">
+      <label for="color">الكمية </label>
+      <input type="quantity" class="form-control" id="color" name="color" value="">
+    </div>
+    <div class="form-group">
+      <label for="color">لون المنتج</label>
+      <input type="color" class="form-control" id="color" name="color" value="#ff7eb3">
+    </div>
+    <div class="form-group">
+      <label for="size">المقاس</label>
+      <select class="form-control" id="size" name="size">
+        <option value="small">S</option>
+        <option value="medium">M</option>
+        <option value="large">L</option>
+        <option value="large">35</option>
+        <option value="large">36</option>
+        <option value="large">37</option>
+        <option value="large">40</option>
+        <option value="large">42</option>
+        <option value="large">43</option>
+        <option value="large">44</option>
+        <option value="large">45</option>
+        <option value="large">46</option>
+
+
+
+      </select>
+    </div>
+    <form>
+      <div class="form-group">
+        <label for="cardNumber">رقم البطاقة</label>
+        <input type="text" class="form-control" id="cardNumber" placeholder="1234 5678 9012 3456" maxlength="19" pattern="\d*" required>
+      </div>
+      <div class="form-group">
+        <label for="cardHolderName">اسم حامل البطاقة</label>
+        <input type="text" class="form-control" id="cardHolderName" placeholder="محمد مغاربة" required>
+      </div>
+      <div class="form-row">
+        <div class="form-group col-md-6">
+          <label for="expiryDate">تاريخ الانتهاء</label>
+          <input type="text" class="form-control" id="expiryDate" placeholder="MM/YY" maxlength="5" required>
+        </div>
+        <div class="form-group col-md-6">
+          <label for="cvv">الرمز السري (CVV)</label>
+          <input type="text" class="form-control" id="cvv" placeholder="123" maxlength="4" pattern="\d*" required>
+        </div>
+      </div>
+      <button type="submit" class="btn btn-block">إرسال</button>
+      </form>
+      
+  </div>
+  
+  <style>
+  body {
+    background: linear-gradient(to right,black
+    ,darkcyan
+    );
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #fff;
+  }
+  .card {
+    width: 350px;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  .card-header {
+    font-size: 1.5rem;
+    text-align: center;
+    margin-bottom: 20px;
+    border-bottom: 1px solid black;
+  }
+  .form-control {
+    background: transparent;
+    border: 1px solid black;
+    color: #fff;
+  }
+  .form-control::placeholder {
+    color: black;
+    font-size: x-large;
+  }
+  .btn {
+    background:black;
+    color:white;
+    border: none;
+  }
+  .btn:hover {
+    background:darkblue;
+    color:black;
+  }
+</style>
+  
+</body>
+</html>
